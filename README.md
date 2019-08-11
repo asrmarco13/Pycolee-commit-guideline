@@ -6,12 +6,12 @@
 1. [Prefazione](#prefazione)
 2. [Le 7 regole per scrivere un buon messaggio di commit](#le-7-regole-per-scrivere-un-buon-messaggio-di-commit)
 3. [Separazione oggetto dal corpo del testo usando una riga vuota](#separazione-oggetto-dal-corpo-del-testo-usando-una-riga-vuota)
-4. [Non usare più di 50 caratteri per oggetto della commit](#non-usare-piu-di-50-caratteri-per-oggetto-della-commit)
-5. [Capitalizzare oggetto della commit](#capitalizzare-l-oggetto-della-commit)
+4. [Usare massimo 50 caratteri per oggetto della commit](#usare-massimo-50-caratteri-per-oggetto-della-commit)
+5. [Capitalizzare oggetto della commit](#capitalizzare-oggetto-della-commit)
 6. [Non mettere il punto a fine oggetto della commit](#non-mettere-il-punto-a-fine-oggetto-della-commit)
-7. [Scrivere oggetto della commit usando l'imperativo](#scrivere-oggetto-della-commit-usando-l-imperativo)
+7. [Scrivere oggetto della commit usando il modo verbale imperativo](#scrivere-oggetto-della-commit-usando-il-modo-verbale-imperativo)
 8. [Il corpo della commit deve andare a capo ogni 72 caratteri](#il-corpo-della-commit-deve-andare-a-capo-ogni-72-caratteri)
-9. [Usare il corpo della commit per spiegare cosa e perché invece di come](#usare-il-corpo-della-commit-per-spiegare-cosa-e-perche-invece-di-come)
+9. [Usare correttamente il corpo della commit](#usare-correttamente-il-corpo-della-commit)
 10. [Git commit message emoji](#git-commit-message-emoji)
 11. [Conclusione](#conclusione)
 
@@ -116,7 +116,7 @@ Usando un comando quale `git log --oneline` avremo il seguente messaggio di log:
 
 Noterete quinti quanto è importante scrivere un oggetto della commit che sia separato dal resto del corpo.
 
-### Non usare più di 50 caratteri per oggetto della commit
+### Usare massimo 50 caratteri per oggetto della commit
 
 **Seconda regola**. Limitare l'oggetto della commit a solo 50 caratteri aiuta lo sviluppatore a mantenere i log chiari e leggibili e a spiegare in maniera chiara e concisa cosa si vuole dire.
 
@@ -140,7 +140,7 @@ e non:
 
 * Non usare punto alla fine dell'oggetto
 
-### Scrivere oggetto della commit usando l'imperativo
+### Scrivere oggetto della commit usando il modo verbale imperativo
 
 **Quinta regola**. Usare l'imperativo significa semplicemente "**parlato o scritto come se si impartisse un comando**". Esempi:
 * Chiudi la porta
@@ -178,9 +178,11 @@ Se si hanno difficoltà sul come scrivere un oggetto di una commit nella maniera
 Ad oggi gli IDE di sviluppo non sono in grado di effettuare il wrap del body ad eccezion fatta di IntelliJ. Per chi ha familiriatà con i sistemi operativi UNIX-like VIM può in questo caso diventare il vostro migliore amico quando si scrivono messaggi di commit, basterà infatti aggiungere il seguente comando all'interno del file .vimrc "**au FileType gitcommit set tw=72**" che farà si che il vostro corpo della commit vada a capo ogni 72 caratteri.
 
 
-### Usare il corpo della commit per spiegare cosa e perché invece di come
+### Usare correttamente il corpo della commit 
 
-**Settima regola**. Questo messaggio di commit del [Core Bitcon](https://github.com/bitcoin/bitcoin/commit/eb0b56b19017ab5c16c745e6da39c53126924ed6) è un'ottimo esempio:
+**Settima regola**. Usare il corpo della commit per spiegare cosa e perché invece di come.
+
+Questo messaggio di commit del [Core Bitcon](https://github.com/bitcoin/bitcoin/commit/eb0b56b19017ab5c16c745e6da39c53126924ed6) è un'ottimo esempio:
 > commit eb0b56b19017ab5c16c745e6da39c53126924ed6
 > Author: Pieter Wuille <pieter.wuille@gmail.com>
 > Date:   Fri Aug 1 22:57:55 2014 +0200
