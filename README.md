@@ -5,15 +5,15 @@
 ## **Indice**
 1. [Prefazione](#prefazione)
 2. [Le 7 regole per scrivere un buon messaggio di commit](#le-7-regole-per-scrivere-un-buon-messaggio-di-commit)
-	1. [Prima regola: separare l'oggetto dal corpo del testo usando una riga vuota](#prima-regola-:-separare-l-oggetto-dal-corpo-del-testo-usando-una-riga-vuota)
-	2. [Seconda regola: non usare più di 50 caratteri per l'oggetto della commit](#seconda-regola-:-non-usare-piu-di-50-caratteri-per-l-oggetto-della-commit)
-	3. [Terza regola: capitalizzare l'oggetto della commit](#terza-regola-:-capitalizzare-l-oggetto-della-commit)
-	4. [Quarta regola: non mettere il punto alla fine dell'oggetto della commit](#quarta-regola-:-non-mettere-il-punto-alla-fine-dell-oggetto-della-commit)
-	5. [Quinta regola: scrivere l'oggetto della commit usando l'imperativo](#quinta-regola-:-scrivere-l-oggetto-della-commit-usando-l-imperativo)
-	6. [Sesta regola: il corpo della commit deve andare a capo ogni 72 caratteri](#sesta-regola-:-il-corpo-della-commit-deve-andare-a-capo-ogni-72-caratteri)
-	7. [Settima regola: usare il corpo della commit per spiegare cosa e perché invece di come](#settima-regola-:-usare-il-corpo-della-commit-per-spiegare-cosa-e-perche-invece-di-come)
-3. [Git commit message emoji](#git-commit-message-emoji)
-4. [Conclusione](#conclusione)
+3. [Separare l'oggetto dal corpo del testo usando una riga vuota](#separare-l-oggetto-dal-corpo-del-testo-usando-una-riga-vuota)
+4. [Non usare più di 50 caratteri per l'oggetto della commit](#non-usare-piu-di-50-caratteri-per-l-oggetto-della-commit)
+5. [Capitalizzare l'oggetto della commit](#capitalizzare-l-oggetto-della-commit)
+6. [Non mettere il punto alla fine dell'oggetto della commit](#non-mettere-il-punto-alla-fine-dell-oggetto-della-commit)
+7. [Scrivere l'oggetto della commit usando l'imperativo](#scrivere-l-oggetto-della-commit-usando-l-imperativo)
+8. [Il corpo della commit deve andare a capo ogni 72 caratteri](#il-corpo-della-commit-deve-andare-a-capo-ogni-72-caratteri)
+9. [Usare il corpo della commit per spiegare cosa e perché invece di come](#usare-il-corpo-della-commit-per-spiegare-cosa-e-perche-invece-di-come)
+10. [Git commit message emoji](#git-commit-message-emoji)
+11. [Conclusione](#conclusione)
 
 Questa guida vuole essere un supporto su come devono essere scritti i messaggi di commit per il progetto Pycolee.
 
@@ -92,9 +92,9 @@ like this:
 >
 > See also: #456, #789
 
-### Prima regola: separare l'oggetto dal corpo del testo usando una riga vuota
+### Separare l'oggetto dal corpo del testo usando una riga vuota
 
-Il manuale del comando `git commit` cita "**Anche se non richiesto è sempre meglio mettere il messaggio di commit su una sola riga (meno di 50 caratteri) che riepiloga la modifica, seguita da una riga vuota e quindi da una descrizione più approfondita. Il testo fino alla prima riga vuota in un messaggio di commit viene considerato come titolo di commit e tale titolo viene utilizzato in Git. Ad esempio, Git-format-patch (1) trasforma una commit in una email e utilizza il titolo sulla riga Oggetto e il resto del commit nel corpo.**"
+**Prima regola**. Il manuale del comando `git commit` cita "**Anche se non richiesto è sempre meglio mettere il messaggio di commit su una sola riga (meno di 50 caratteri) che riepiloga la modifica, seguita da una riga vuota e quindi da una descrizione più approfondita. Il testo fino alla prima riga vuota in un messaggio di commit viene considerato come titolo di commit e tale titolo viene utilizzato in Git. Ad esempio, Git-format-patch (1) trasforma una commit in una email e utilizza il titolo sulla riga Oggetto e il resto del commit nel corpo.**"
 
 Non tutte le commit richiedono oblligatoriamente oggetto e body, a volte il solo oggetto basta e avanza. Esempio:
 
@@ -116,17 +116,17 @@ Usando un comando quale `git log --oneline` avremo il seguente messaggio di log:
 
 Noterete quinti quanto è importante scrivere un oggetto della commit che sia separato dal resto del corpo.
 
-### Seconda regola: non usare più di 50 caratteri per l'oggetto della commit;
+### Non usare più di 50 caratteri per l'oggetto della commit;
 
-Limitare l'oggetto della commit a solo 50 caratteri aiuta lo sviluppatore a mantenere i log chiari e leggibili e a spiegare in maniera chiara e concisa cosa si vuole dire.
+**Seconda regola**. Limitare l'oggetto della commit a solo 50 caratteri aiuta lo sviluppatore a mantenere i log chiari e leggibili e a spiegare in maniera chiara e concisa cosa si vuole dire.
 
 > **ATTENZIONE: Se avete difficoltà nel riassumere in 50 caratteri quello che volete dire in quanto le modifiche che state rilasciando sono tante allora la buona norma sarà l'uso dei commit atomici.**
 
 L'interfaccia utente di GitHub si appoggia fermamente su queste convenzioni, infatti avvisa se si superano i 50 caratteri e tronca il soggetto se supera i 72 caratteri mettendo 3 puntini consecutivi.
 
-### Terza regola: capitalizzare l'oggetto della commit
+### Capitalizzare l'oggetto della commit
 
-Per dirla in maniera breve e consisa scrivere così:
+**Terza regola**. Per dirla in maniera breve e consisa scrivere così:
 
 * Fixare sommario documento
 
@@ -134,15 +134,15 @@ e non:
 
 * fixare sommario documento
 
-### Quarta regola: Non mettere il punto alla fine dell'oggetto della commit
+### Non mettere il punto alla fine dell'oggetto della commit
 
-All'interno dell'oggetto della commit non serve il punto. Esempio:
+**Quarta regola**. All'interno dell'oggetto della commit non serve il punto. Esempio:
 
 * Non usare punto alla fine dell'oggetto
 
-### Quinta regola: scrivere l'oggetto della commit usando l'imperativo
+### Scrivere l'oggetto della commit usando l'imperativo
 
-Usare l'imperativo significa semplicemente "**parlato o scritto come se si impartisse un comando**". Esempi:
+**Quinta regola**. Usare l'imperativo significa semplicemente "**parlato o scritto come se si impartisse un comando**". Esempi:
 * Chiudi la porta
 * Pulisci la tua camera
 * Porta fuori la spazzatura
@@ -171,16 +171,16 @@ Se si hanno difficoltà sul come scrivere un oggetto di una commit nella maniera
 
 **RICORDATE: l'imperativo va usato solo nell'oggetto della commit.**
 
-### Sesta regola: il corpo della commit deve andare a capo ogni 72 caratteri
+### Il corpo della commit deve andare a capo ogni 72 caratteri
 
-Git non è in grado di eseguire il wrap del testo in automatico. Se non si usa questo piccolo accorgimento si finisce con l'avere nei messaggi di commit del testo mozzato in maniera errata. Usando solo 72 caratteri permettiamo a Git di avere un sacco di spazio in più quando indentare.
+**Sesta regola**. Git non è in grado di eseguire il wrap del testo in automatico. Se non si usa questo piccolo accorgimento si finisce con l'avere nei messaggi di commit del testo mozzato in maniera errata. Usando solo 72 caratteri permettiamo a Git di avere un sacco di spazio in più quando indentare.
 
 Ad oggi gli IDE di sviluppo non sono in grado di effettuare il wrap del body ad eccezion fatta di IntelliJ. Per chi ha familiriatà con i sistemi operativi UNIX-like VIM può in questo caso diventare il vostro migliore amico quando si scrivono messaggi di commit, basterà infatti aggiungere il seguente comando all'interno del file .vimrc "**au FileType gitcommit set tw=72**" che farà si che il vostro corpo della commit vada a capo ogni 72 caratteri.
 
 
-### Settima regola: usare il corpo della commit per spiegare cosa e perché invece di come
+### Usare il corpo della commit per spiegare cosa e perché invece di come
 
-Questo messaggio di commit del [Core Bitcon](https://github.com/bitcoin/bitcoin/commit/eb0b56b19017ab5c16c745e6da39c53126924ed6) è un'ottimo esempio:
+**Settima regola**. Questo messaggio di commit del [Core Bitcon](https://github.com/bitcoin/bitcoin/commit/eb0b56b19017ab5c16c745e6da39c53126924ed6) è un'ottimo esempio:
 > commit eb0b56b19017ab5c16c745e6da39c53126924ed6
 > Author: Pieter Wuille <pieter.wuille@gmail.com>
 > Date:   Fri Aug 1 22:57:55 2014 +0200
@@ -211,7 +211,7 @@ Ciò che ha fatto Pieter è importantissimo in quanto permetterà agli altri di 
 
 ### Git commit message emoji
 
-Può essere utile anche se non è richiesto ai fini di un progetto usare all'interno dei messaggi di commit le emoji. Le emoji danno un tocco di stile ai messaggi di commit all'interno di piattaforme che gestiscono repository Git quali Gitlab o GitHub ma possono diventare controproducenti quando si usa git da terminale o attraverso prodotti di terze parti quali Sourcetree in quanto prendono spazio all'oggetto della commit che ricordiamo essere di 50 caratteri. Altra cosa, le emoji non sono visibili su tali client. Inoltre, aggiungere all'inizio dell'oggetto della commit un emoji porta a non rispettare più i punti 3 e 5. Quindi, stabilite sempre con il vostro team di sviluppo quale strada sia meglio intraprendere e ricordate di non fare assolutamente di testa vostra.
+**Opzionale**. Può essere utile anche se non è richiesto ai fini di un progetto usare all'interno dei messaggi di commit le emoji. Le emoji danno un tocco di stile ai messaggi di commit all'interno di piattaforme che gestiscono repository Git quali Gitlab o GitHub ma possono diventare controproducenti quando si usa git da terminale o attraverso prodotti di terze parti quali Sourcetree in quanto prendono spazio all'oggetto della commit che ricordiamo essere di 50 caratteri. Altra cosa, le emoji non sono visibili su tali client. Inoltre, aggiungere all'inizio dell'oggetto della commit un emoji porta a non rispettare più i punti 3 e 5. Quindi, stabilite sempre con il vostro team di sviluppo quale strada sia meglio intraprendere e ricordate di non fare assolutamente di testa vostra.
 
 ### Development
 
