@@ -21,7 +21,7 @@ Questa guida vuole essere un supporto su come devono essere scritti i messaggi d
 
 **L'importanza di scrivere bene i messaggi di commit**
 
-Se osserviamo i messaggi di commit degli sviluppatori all'interno di un progetto di lavoro (piattaforme quali Github o Gitlab, repository interni IAD) troveremo facilmente messaggi di commit più o meno lunghi. Vediamone un esempio facendoci stampare in output sul nostro terminale gli ultimi 5 messaggi di commit precedenti al 26 Marzo 2009:
+Se osserviamo i messaggi di commit degli sviluppatori all'interno di un progetto di lavoro (piattaforme quali Github o Gitlab) troveremo facilmente messaggi di commit più o meno lunghi. Vediamone un esempio facendoci stampare in output sul nostro terminale gli ultimi 5 messaggi di commit precedenti al 26 Marzo 2009:
 
 > **$ git log --oneline -5 --author cbeams --before "Fri Mar 26 2009"**
 >
